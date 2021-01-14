@@ -40,7 +40,7 @@ class NextAccessionController < ApplicationController
 	def post_accession(params)
 		time = Time.new
 		cmgmt = JSONModel(:collection_management).new({
-			:processing_status => "in_progress"
+			:processing_status => "In Progress"
 		})
 
 		record = JSONModel(:accession).new({
